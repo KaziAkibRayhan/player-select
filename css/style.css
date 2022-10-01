@@ -1,0 +1,15 @@
+body {
+    background-color: #151515 !important;
+}
+
+
+
+/* Header bg */
+.bg-header {
+    height: 350px;
+    background-color: #242B2E;
+}
+
+.text-color {
+    color: #FF5E19;
+}

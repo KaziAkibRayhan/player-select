@@ -1,6 +1,6 @@
 function displayPlayer(players) {
     const playerList = document.getElementById('player-name-lists');
-    playerList.innerHTML = "";
+    playerList.innerHTML = '';
     for (const player of players) {
         const playerName = player.playerName
         const li = document.createElement('li');
@@ -8,6 +8,7 @@ function displayPlayer(players) {
         playerList.appendChild(li);
     }
 }
+
 const playerArray = [];
 function addToPlayer(element) {
     const playerName = element.parentNode.children[0].innerText;
@@ -18,35 +19,6 @@ function addToPlayer(element) {
     playerArray.push(playerObj);
     displayPlayer(playerArray);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -89,18 +61,22 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
     else {
         const playerTotalExpense = inputValue * havePlayer;
-        console.log(playerTotalExpense);
         setValue('player-expenses', playerTotalExpense);
     }
 });
 
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
     const managerCost = getInputValueById('manager-cost');
-    console.log(managerCost);
     const coachCost = getInputValueById('coach-cost');
-    console.log(coachCost);
     const playerTotalCost = getElementValueById('player-expenses');
-    console.log(playerTotalCost);
-    const calculateTotalCost = managerCost + coachCost + playerTotalCost;
-    setValue('calculate-total-cost', calculateTotalCost);
+    if (isNaN(managerCost && coachCost)) {
+        alert('Please type valid number');
+    }
+    else if (managerCost < 0 && coachCost < 0) {
+
+    }
+    else {
+        const calculateTotalCost = managerCost + coachCost + playerTotalCost;
+        setValue('calculate-total-cost', calculateTotalCost);
+    }
 })

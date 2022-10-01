@@ -1,6 +1,23 @@
+function displayPlayer(players) {
+    const playerList = document.getElementById('player-name-lists');
+    playerList.innerHTML = "";
+    for (const player of players) {
+        const playerName = player.playerName
+        const li = document.createElement('li');
+        li.innerText = playerName;
+        playerList.appendChild(li);
+    }
+}
+const playerArray = [];
+function addToPlayer(element) {
+    const playerName = element.parentNode.children[0].innerText;
 
-
-
+    const playerObj = {
+        playerName: playerName
+    }
+    playerArray.push(playerObj);
+    displayPlayer(playerArray);
+}
 
 
 

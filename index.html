@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header class="container d-flex justify-content-center align-items-center bg-header">
+    <!-- <header class="container d-flex justify-content-center align-items-center bg-header">
         <h1 class="text-color">Choose Your Best Player</h1>
-    </header>
+    </header> -->
     <main>
         <section class="container mt-5">
             <div class="row gx-3">
@@ -26,7 +26,7 @@
                                 <img src="images/MESSI.jpg" class="card-img-top" alt="Messi">
                                 <div class="card-body text-center">
                                     <h5 id="player1" class="card-title">Messi</h5>
-                                    <a href="#" class="btn  btn-primary w-75 select-players">Select</a>
+                                    <a href="#" class="btn  btn-primary w-75" onclick="addToPlayer(this)">Select</a>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                                 <img src="images/Kevin De Bruyne.jpg" class="card-img-top" alt="Messi">
                                 <div class="card-body text-center">
                                     <h5 id="player2" class="card-title">Kevin De Bruyne</h5>
-                                    <a href="#" class="btn  btn-primary w-75 select-players">Select</a>
+                                    <a href="#" class="btn btn-primary w-75" onclick="addToPlayer(this)">Select</a>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                                 <img src="images/Kylian Mbappé.jpg" class="card-img-top" alt="Messi">
                                 <div class="card-body text-center">
                                     <h5 id="player3" class="card-title">Kylian Mbappé</h5>
-                                    <a href="#" class="btn  btn-primary w-75 select-players">Select</a>
+                                    <a href="#" class="btn  btn-primary w-75" onclick="addToPlayer(this)">Select</a>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                 <img src="images/Neymar.jpg" class="card-img-top" alt="Messi">
                                 <div class="card-body text-center">
                                     <h5 id="player4" class="card-title">Neymar</h5>
-                                    <a href="#" class="btn  btn-primary w-75 select-players">Select</a>
+                                    <a href="#" class="btn  btn-primary w-75" onclick="addToPlayer(this)">Select</a>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                                 <img src="images/Robert Lewandowski.jpg" class="card-img-top" alt="Messi">
                                 <div class="card-body text-center">
                                     <h5 id="player5" class="card-title">Robert Lewandowski</h5>
-                                    <a href="#" class="btn  btn-primary w-75 select-players">Select</a>
+                                    <a href="#" class="btn  btn-primary w-75" onclick="addToPlayer(this)">Select</a>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                                 <img src="images/Ronaldo.jpg" class="card-img-top" alt="Messi">
                                 <div class="card-body text-center">
                                     <h5 id="player6" class="card-title">Ronaldo</h5>
-                                    <a href="#" class="btn  btn-primary w-75 select-players">Select</a>
+                                    <a href="#" class="btn  btn-primary w-75" onclick="addToPlayer(this)">Select</a>
                                 </div>
                             </div>
                         </div>
@@ -84,11 +84,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold text-center text-danger fs-3">Selected - V</h5>
                                     <ol id="player-name-lists">
-                                        <li>player-1</li>
-                                        <li>player-2</li>
-                                        <li>player-3</li>
-                                        <li>player-4</li>
-                                        <li>player-5</li>
+
                                     </ol>
                                 </div>
                             </div>

@@ -1,3 +1,4 @@
+// display Player
 function displayPlayer(players) {
     const playerList = document.getElementById('player-name-lists');
     playerList.innerHTML = '';
@@ -12,17 +13,12 @@ function displayPlayer(players) {
 const playerArray = [];
 function addToPlayer(element) {
     const playerName = element.parentNode.children[0].innerText;
-
     const playerObj = {
         playerName: playerName
     }
     playerArray.push(playerObj);
     displayPlayer(playerArray);
 }
-
-
-
-
 
 
 // Budget Calculate 
